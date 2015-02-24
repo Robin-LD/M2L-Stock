@@ -18,6 +18,14 @@ Application Entry Point.
 	<summary>
 Application
 </summary>
+</member><member name="M:M2LStock.Accueil.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:M2LStock.Accueil">
+	<summary>
+Accueil
+</summary>
 </member><member name="M:M2LStock.MainWindow.InitializeComponent">
 	<summary>
 InitializeComponent

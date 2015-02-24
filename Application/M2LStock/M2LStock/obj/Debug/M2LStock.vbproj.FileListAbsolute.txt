@@ -15,3 +15,5 @@ C:\xampp\htdocs\M2L-Stock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\M2LS
 C:\xampp\htdocs\M2L-Stock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\M2LStock.exe
 C:\xampp\htdocs\M2L-Stock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\M2LStock.xml
 C:\xampp\htdocs\M2L-Stock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\M2LStock.pdb
+C:\xampp\htdocs\M2L-Stock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\Accueil.baml
+C:\xampp\htdocs\M2L-Stock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\Accueil.g.vb

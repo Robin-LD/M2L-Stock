@@ -1,8 +1,11 @@
-﻿<Window x:Class="Facture"
+﻿<Window x:Name="W_Facture" x:Class="Facture"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    Title="Facture" Height="300" Width="300">
+    Title="Facture" Height="412" Width="573">
     <Grid>
-        
+        <Button x:Name="Bt_AjouterFacture" Content="Ajouter" Margin="190,10,10,239" HorizontalAlignment="Right" VerticalAlignment="Top" Width="70"/>
+        <Button x:Name="Bt_ModifierFacture" Content="Modifier" Margin="190,35,10,214" VerticalAlignment="Top" HorizontalAlignment="Right" Width="70"/>
+        <Button x:Name="Bt_SupprimerFacture" Content="Supprimer" Margin="190,60,10,189" VerticalAlignment="Top" HorizontalAlignment="Right" Width="70"/>
+
     </Grid>
 </Window>
