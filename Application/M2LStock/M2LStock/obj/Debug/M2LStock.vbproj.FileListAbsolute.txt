@@ -1,0 +1,17 @@
+C:\Users\Jo'\AppData\Local\Temporary Projects\M2LStock\bin\Debug\M2LStock.exe.config
+C:\xampp\htdocs\M2L-Stock\M2L-Stock\Application\M2LStock\M2LStock\bin\Debug\M2LStock.exe.config
+C:\xampp\htdocs\M2L-Stock\M2L-Stock\Application\M2LStock\M2LStock\bin\Debug\M2LStock.exe
+C:\xampp\htdocs\M2L-Stock\M2L-Stock\Application\M2LStock\M2LStock\bin\Debug\M2LStock.pdb
+C:\xampp\htdocs\M2L-Stock\M2L-Stock\Application\M2LStock\M2LStock\bin\Debug\M2LStock.xml
+C:\xampp\htdocs\M2L-Stock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\Facture.baml
+C:\xampp\htdocs\M2L-Stock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\MainWindow.baml
+C:\xampp\htdocs\M2L-Stock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\Facture.g.vb
+C:\xampp\htdocs\M2L-Stock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\MainWindow.g.vb
+C:\xampp\htdocs\M2L-Stock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\Application.g.vb
+C:\xampp\htdocs\M2L-Stock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\M2LStock_MarkupCompile.cache
+C:\xampp\htdocs\M2L-Stock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\M2LStock.g.resources
+C:\xampp\htdocs\M2L-Stock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\M2LStock.Resources.resources
+C:\xampp\htdocs\M2L-Stock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\M2LStock.vbproj.GenerateResource.Cache
+C:\xampp\htdocs\M2L-Stock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\M2LStock.exe
+C:\xampp\htdocs\M2L-Stock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\M2LStock.xml
+C:\xampp\htdocs\M2L-Stock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\M2LStock.pdb
