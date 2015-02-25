@@ -16,12 +16,14 @@
   End Sub
 
   Private Sub Bt_SupprimerFacture_Click(sender As Object, e As RoutedEventArgs) Handles Bt_SupprimerFacture.Click
+    'commantaire
 
   End Sub
 
-
-  Private Sub Button_Click(sender As Object, e As RoutedEventArgs)
-
+  Private Sub Bt_FactureRetour_Click(sender As Object, e As RoutedEventArgs) Handles Bt_FactureRetour.Click
+    Dim accueil As New Accueil
+    accueil.Show()
+    Me.Close()
   End Sub
 
 #End Region
