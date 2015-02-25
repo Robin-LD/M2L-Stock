@@ -6,6 +6,8 @@
         <Button x:Name="Bt_AjouterFacture" Content="Ajouter" Margin="190,10,10,239" HorizontalAlignment="Right" VerticalAlignment="Top" Width="70"/>
         <Button x:Name="Bt_ModifierFacture" Content="Modifier" Margin="190,35,10,214" VerticalAlignment="Top" HorizontalAlignment="Right" Width="70"/>
         <Button x:Name="Bt_SupprimerFacture" Content="Supprimer" Margin="190,60,10,189" VerticalAlignment="Top" HorizontalAlignment="Right" Width="70"/>
+        <DataGrid x:Name="DataG_Facture" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="361" Width="470"/>
+        <Button x:Name="Bt_FactureRetour" Content="Retour" HorizontalAlignment="Left" Margin="485,351,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
 
     </Grid>
 </Window>
