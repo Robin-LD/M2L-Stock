@@ -17,6 +17,7 @@
 
   Private Sub Bt_SupprimerFacture_Click(sender As Object, e As RoutedEventArgs) Handles Bt_SupprimerFacture.Click
     'commantaire
+    'Un autre commentaire
 
   End Sub
 
