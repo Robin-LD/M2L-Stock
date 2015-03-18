@@ -1,0 +1,9 @@
+<?php
+	session_start();
+	unset($_SESSION["id"]);
+?>
+<script>
+	$(document).ready(function(){
+	    $('#page').load('index.php');
+	});
+</script>
