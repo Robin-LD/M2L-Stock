@@ -6,7 +6,39 @@ M2LStock
 </name>
 </assembly>
 <members>
-<member name="M:M2LStock.Application.InitializeComponent">
+<member name="M:M2LStock.Stock.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:M2LStock.Stock">
+	<summary>
+Stock
+</summary>
+</member><member name="M:M2LStock.MainWindow.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:M2LStock.MainWindow">
+	<summary>
+MainWindow
+</summary>
+</member><member name="M:M2LStock.Accueil.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:M2LStock.Accueil">
+	<summary>
+Accueil
+</summary>
+</member><member name="M:M2LStock.Facture.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:M2LStock.Facture">
+	<summary>
+Facture
+</summary>
+</member><member name="M:M2LStock.Application.InitializeComponent">
 	<summary>
 InitializeComponent
 </summary>
@@ -17,30 +49,6 @@ Application Entry Point.
 </member><member name="T:M2LStock.Application">
 	<summary>
 Application
-</summary>
-</member><member name="M:M2LStock.Accueil.InitializeComponent">
-	<summary>
-InitializeComponent
-</summary>
-</member><member name="T:M2LStock.Accueil">
-	<summary>
-Accueil
-</summary>
-</member><member name="M:M2LStock.MainWindow.InitializeComponent">
-	<summary>
-InitializeComponent
-</summary>
-</member><member name="T:M2LStock.MainWindow">
-	<summary>
-MainWindow
-</summary>
-</member><member name="M:M2LStock.Facture.InitializeComponent">
-	<summary>
-InitializeComponent
-</summary>
-</member><member name="T:M2LStock.Facture">
-	<summary>
-Facture
 </summary>
 </member><member name="P:M2LStock.My.MyWpfExtension.Application">
 	<summary>
