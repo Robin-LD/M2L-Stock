@@ -62,6 +62,12 @@ class stock
         $stocklistresult = mysqli_query($connect, $getlistquery);
         return $stocklistresult;
     }
+
+    static function getStockItem($connect, $id) {
+        $getlistquery = "SELECT * FROM Stock WHERE id = ".$id;
+        $stocklistresult = mysqli_query($connect, $getlistquery);
+        return $stocklistresult;
+    }
     
     static function sell($stockid, $amount, $connect) {
         $sellquery = "UPDATE stock SET amount = amount - " . $amount . " WHERE id = " . $stockid;

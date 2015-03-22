@@ -38,16 +38,16 @@ class stock
     public function register($connect, $orderlist) {
         $date = date('Y-m-d');
         $orderquery = "INSERT INTO order VALUE ('',/*INSERT USER ID*/," . $date . ");";
+        mysqli_query($connect, $orderquery);
         $orderid = mysqli_insert_id();
         $listquery = "INSERT INTO order VALUE ";
         foreach ($orderlist as $orderdetails) {
             
             //INSERT ORDERDETAILS
-            $listquery = $listquery."('',".$orderdetails->getAmount().",".$orderdetails->getStock_id().",0,null";
+            $listquery = $listquery."('',".$orderdetails->getAmount().",".$orderdetails->getStock_id().",".$orderid.",null)";
             
         }
         $listquery = $listquery.';';
-        mysqli_query($connect, $orderquery);
         mysqli_query($connect, $listquery);
     }
 }
