@@ -50,7 +50,7 @@ session_start();
 	<div class="panel-body">
 		<?php
 			include_once('ressources/connexion.php');
-			$id = $_SESSION['id'];
+			$id = $_SESSION['userid'];
 			$userinfo = getUserbyId($id,$connect);
 			$infos = mysqli_fetch_array($userinfo);
 			echo  '<label>Nom:</label> '.$infos['username'].'<br /><label>Email:</label> '.$infos['email'].'<br /><label>Adresse:</label> '.$infos['adress'];

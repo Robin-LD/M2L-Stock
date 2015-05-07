@@ -6,13 +6,28 @@ $idarticle = $_GET['id'];
 $amountarticle = $_GET['amount'];
 $name = $_GET['name'];
 $price = $_GET['price'];
+
+//CHECK AMOUNTS
+$articlebdd = stock::getStockItem($connect,$idarticle);
+
 settype($idarticle, "integer");
 settype($amountarticle, "integer");
 settype($price, "float");
 $price = $price*$amountarticle;
 $orderdetail = array('id'=>$idarticle,'amount'=>$amountarticle, 'nom'=>$name, 'price'=>$price);
-$_SESSION['orderlist'][] = $orderdetail;
-echo'<pre>'; echo var_dump($_SESSION);echo'</pre>';
+
+$exist = true;
+foreach ($_SESSION['orderlist'] as $list => $val) {
+	if($val['id'] == $idarticle){
+		if($articlebdd['amount'] > $val['amount']+$amountarticle){
+			$val['amount'] = $val['amount']+$amountarticle ;
+			$_SESSION['orderlist'][$list] = $val;
+		}
+		$exist = false;
+	}
+}
+
+if($exist){$_SESSION['orderlist'][] = $orderdetail;}
 ?>
 <div class="panel panel-info" width="40px" >
 <div class="panel-heading"><h3 class="panel-title" id="infostitre">Enregistré !</h3></div>

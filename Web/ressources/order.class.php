@@ -1,5 +1,5 @@
 <?php
-class stock
+class order
 {
     private $id;
     private $user_id;
@@ -35,20 +35,31 @@ class stock
         return $this;
     }
     
-    public function register($connect, $orderlist) {
+    static function register($connect, $orderlist, $userid) {
         $date = date('Y-m-d');
-        $orderquery = "INSERT INTO order VALUE ('',/*INSERT USER ID*/," . $date . ");";
+        $orderquery = "INSERT INTO `m2l-interne`.`order` (`user_id`, `date`) VALUES ('".$userid."','" . $date . "');";
         mysqli_query($connect, $orderquery);
-        $orderid = mysqli_insert_id();
-        $listquery = "INSERT INTO order VALUE ";
+
+
+        $orderid = mysqli_insert_id($connect);
+        $listquery = "INSERT INTO `m2l-interne`.`orderlist` (`amount`, `stock_id`, `order_id`) VALUES";
         foreach ($orderlist as $orderdetails) {
-            
             //INSERT ORDERDETAILS
-            $listquery = $listquery."('',".$orderdetails->getAmount().",".$orderdetails->getStock_id().",".$orderid.",null)";
+            $listquery = $listquery."('".$orderdetails['amount']."','".$orderdetails['id']."','".$orderid."'),";
             
         }
+        $listquery = substr($listquery, 0, -1);
         $listquery = $listquery.';';
         mysqli_query($connect, $listquery);
+    }
+
+    static function history($connect, $user_id){
+        $query = "SELECT o.id, o.date, SUM(d.price) as price FROM `order` o
+                JOIN orderlist d ON o.id = d.order_id
+                WHERE o.user_id =".$user_id."
+                GROUP BY o.id;";
+        $list = mysqli_query($connect, $query);
+        return $list;
     }
 }
 ?>

@@ -66,7 +66,8 @@ class stock
     static function getStockItem($connect, $id) {
         $getlistquery = "SELECT * FROM Stock WHERE id = ".$id;
         $stocklistresult = mysqli_query($connect, $getlistquery);
-        return $stocklistresult;
+        $infos = mysqli_fetch_array($stocklistresult);
+        return $infos;
     }
     
     static function sell($stockid, $amount, $connect) {

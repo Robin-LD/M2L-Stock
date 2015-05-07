@@ -6,7 +6,7 @@ if (isset($_POST['envoyer'])) {
     $findresult = mysqli_query($connect, $findquery);
     $resultrow = mysqli_fetch_array($findresult);
     if ($resultrow['password'] == $_POST['password']) {
-        $_SESSION["id"] = $resultrow['id'];
+        $_SESSION["userid"] = $resultrow['id'];
         echo 'ok';
         exit;
     } 
