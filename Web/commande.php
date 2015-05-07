@@ -31,6 +31,10 @@ include_once 'ressources/stock.class.php';
 		var url = 'articledelete.php?id='+id;
 		$("#page").load(url);
 	});
+
+	function valid(){
+		$("#myModal").load('ordervalid.php');
+	}
 </script>
 <ul class="nav nav-tabs" role="tablist" id="navbar">
         <li role="presentation" id="menu"><a>Menu</a></li>
@@ -53,23 +57,46 @@ include_once 'ressources/stock.class.php';
 	        </tr>
     	</thead>
     	<?php 
+    	$prixtotal = 0;
     	if(isset($_SESSION['orderlist'])){
     		$list = $_SESSION['orderlist'];
-    		$prixtotal = 0;
     		foreach ($list as $key=>$order) {
     			echo'<tr><td>'.$order['nom'].'</td><td>'.$order['amount'].'</td><td>'.$order['price'].' €</td><td><span role="presentation" class="pull-right btn btn-xs btn-danger" ohmy="'.$key.'" name="delete">Supprimer</span></td></tr>';
     			$prixtotal += $order['price'];
     		}
     	}
     	?>
-    	<thread>
     		<tr>
 	            <th></th>
 	            <th></th>
-	            <th></th>
 	            <th><span class='pull-right'>Prix total: <?php echo $prixtotal; ?>€</span></th>
+	        	<th>
+	        		<span name="valider" role="presentation" 
+	        			class="pull-right btn btn-sm btn-success"
+	        			data-toggle="modal" data-target="#myModal">
+	        			Valider
+	        		</span>
+	        		<div class="modal fade"
+        			id="myModal" 
+        			tabindex="-1" 
+        			role="dialog" 
+        			aria-labelledby="myModalLabel" 
+        			aria-hidden="true">
+	        			<div class="modal-dialog">
+					    	<div class="modal-content">
+					    		<div class="modal-header">
+	        					Valider votre commande ?
+	        					</div>
+							    <div class="modal-body">
+							    	<span class="btn btn-success btn-sm"
+							    	onclick="javascript:valid()">Confirmer</span>
+								    <span class="btn btn-warning btn-sm" data-dismiss="modal" aria-label="Close">Annuler</span>
+							    </div>
+							</div>
+	        			</div>
+	        		</div>
+	        	</th>
 	        </tr>
-    	</thread>
     </table>
 </div>
 </div>
