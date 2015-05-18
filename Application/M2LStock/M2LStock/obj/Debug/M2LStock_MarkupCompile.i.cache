@@ -4,17 +4,17 @@
 winexe
 VB
 .vb
-C:\xampp\htdocs\m2lstock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\
+C:\xampp\htdocs\M2LStock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\
 M2LStock
 none
 false
 
-C:\xampp\htdocs\m2lstock\M2L-Stock\Application\M2LStock\M2LStock\Application.xaml
-4-3775297
+C:\xampp\htdocs\M2LStock\M2L-Stock\Application\M2LStock\M2LStock\Application.xaml
+10-1804080089
 
-101860855703
-232044429424
-Accueil.xaml;Facture.xaml;MainWindow.xaml;Stock.xaml;
+16-1809651709
+1784311246
+accountgestion.xaml;Accueil.xaml;AjouterFacture.xaml;Commande.xaml;Connection.xaml;Facture.xaml;ImprimerFacture.xaml;MainWindow.xaml;ModifierFacture.xaml;Stock.xaml;
 
 False
 
