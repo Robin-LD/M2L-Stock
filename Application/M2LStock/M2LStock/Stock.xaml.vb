@@ -1,25 +1,47 @@
-﻿Public Class Stock
+﻿Imports MySql.Data
+Imports MySql.Data.Entity
+Imports MySql.Data.MySqlClient
+Imports MySql.Data.Types
+Imports System.Data.SqlClient
+Imports System.Data
 
-  Private Sub Bt_Ajouter_Click(sender As Object, e As RoutedEventArgs) Handles Bt_Ajouter.Click
+Public Class Stock
 
-  End Sub
+    Public Function Connexion() As MySqlConnection
+        Dim seConnecter As String = "Server =localhost; Database=m2l-stock2;Uid=root;Pwd=;"
+        Dim conn As MySqlConnection = New MySqlConnection
+        Try
+            conn.ConnectionString = seConnecter
+            conn.Open()
+            '  Return conn
+        Catch ex As Exception
+            MsgBox("Impossible de se connecter à la base de données")
+        End Try
 
-  Private Sub Bt_Rechercher_Click(sender As Object, e As RoutedEventArgs) Handles Bt_Rechercher.Click
+    End Function
+    Public Sub toutAfficher()
+        Dim seConnecter As String = "Server =localhost; Database=m2l-stock2;Uid=root;Pwd=;"
+        Dim conn As MySqlConnection = New MySqlConnection
+        Try
+            conn.ConnectionString = seConnecter
+            conn.Open()
+            '  Return conn
+        Catch ex As Exception
+            MsgBox("Impossible de se connecter à la base de données")
+        End Try
+        Dim requete As String = "select * from stock"
+        Dim commande As New MySqlCommand(requete, conn)
+        Dim Adaptateur As New MySqlDataAdapter(commande)
+        Dim MonDataSet As DataSet = New DataSet
+        DataG_Stock.AutoGenerateColumns = True
+        Adaptateur.Fill(MonDataSet, "stock")
 
-  End Sub
+        DataG_Stock.ItemsSource = CType(MonDataSet.Tables("stock").DefaultView, IEnumerable)
+    End Sub
 
-  Private Sub Bt_Modifier_Click(sender As Object, e As RoutedEventArgs) Handles Bt_Modifier.Click
-
-  End Sub
-
-  Private Sub Bt_Supprimer_Click(sender As Object, e As RoutedEventArgs) Handles Bt_Supprimer.Click
-
-  End Sub
-
-  Private Sub Bt_Retour_Click(sender As Object, e As RoutedEventArgs) Handles Bt_Retour.Click
-    Dim accueil As New Accueil
-    accueil.Show()
-    Me.Close()
-  End Sub
-
+    Private Sub W_Stock_Loaded(sender As Object, e As RoutedEventArgs) Handles W_Stock.Loaded
+        Me.WindowState = Windows.WindowState.Maximized
+        Connexion()
+        toutAfficher()
+    End Sub
 End Class

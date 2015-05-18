@@ -1,0 +1,17 @@
+﻿<Window x:Class="ModifierFacture"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="ModifierFacture" Height="364.894" Width="500" Loaded="Window_Loaded">
+    <Grid x:Name="Grid_ModifierFacture" >
+        <Grid x:Name="Grid_ModifFacture" Margin="10,35,2,193" Background="#FFF07A7A">
+            <DataGrid x:Name="DataG_ModifFacture" Margin="10"/>
+        </Grid>
+        <Button x:Name="Bt_ValiderModif" Content="Valider" HorizontalAlignment="Left" Height="29" Margin="403,295,0,0" VerticalAlignment="Top" Width="79"/>
+        <Label Content="Date" HorizontalAlignment="Left" Height="24" Margin="10,204,0,0" VerticalAlignment="Top" Width="62"/>
+        <Label Content="Montant" HorizontalAlignment="Left" Height="24" Margin="10,175,0,0" VerticalAlignment="Top" Width="62"/>
+        <Label Content="Client" HorizontalAlignment="Left" Height="24" Margin="10,146,0,0" VerticalAlignment="Top" Width="62"/>
+        <TextBox x:Name="Txtb_Modif_Client" HorizontalAlignment="Left" Height="23" Margin="77,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Txtb_ModifMontant" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="77,175,0,0"/>
+        <TextBox x:Name="Txtb_ModifDate" HorizontalAlignment="Left" Height="23" Margin="77,203,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+    </Grid>
+</Window>

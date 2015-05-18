@@ -24,11 +24,9 @@ C:\xampp\htdocs\m2lstock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\M2LSt
 C:\xampp\htdocs\m2lstock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\Accueil.baml
 C:\xampp\htdocs\m2lstock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\Facture.baml
 C:\xampp\htdocs\m2lstock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\MainWindow.baml
-C:\xampp\htdocs\m2lstock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\Stock.baml
 C:\xampp\htdocs\m2lstock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\Accueil.g.vb
 C:\xampp\htdocs\m2lstock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\Facture.g.vb
 C:\xampp\htdocs\m2lstock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\MainWindow.g.vb
-C:\xampp\htdocs\m2lstock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\Stock.g.vb
 C:\xampp\htdocs\m2lstock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\Application.g.vb
 C:\xampp\htdocs\m2lstock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\M2LStock_MarkupCompile.cache
 C:\xampp\htdocs\m2lstock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\M2LStock.g.resources
@@ -38,3 +36,13 @@ C:\xampp\htdocs\m2lstock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\M2LSt
 C:\xampp\htdocs\m2lstock\M2L-Stock\Application\M2LStock\M2LStock\M2LStock.exe
 C:\xampp\htdocs\m2lstock\M2L-Stock\Application\M2LStock\M2LStock\M2LStock.pdb
 C:\xampp\htdocs\m2lstock\M2L-Stock\Application\M2LStock\M2LStock\M2LStock.xml
+C:\xampp\htdocs\M2LStock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\AjouterFacture.baml
+C:\xampp\htdocs\M2LStock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\AjouterFacture.g.vb
+C:\xampp\htdocs\M2LStock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\ModifierFacture.baml
+C:\xampp\htdocs\M2LStock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\ModifierFacture.g.vb
+C:\xampp\htdocs\M2LStock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\Stock.baml
+C:\xampp\htdocs\M2LStock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\Stock.g.vb
+C:\xampp\htdocs\M2LStock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\ImprimerFacture.baml
+C:\xampp\htdocs\M2LStock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\ImprimerFacture.g.vb
+C:\xampp\htdocs\M2LStock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\Commande.baml
+C:\xampp\htdocs\M2LStock\M2L-Stock\Application\M2LStock\M2LStock\obj\Debug\Commande.g.vb

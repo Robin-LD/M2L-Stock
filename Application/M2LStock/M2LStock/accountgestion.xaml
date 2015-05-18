@@ -1,0 +1,11 @@
+﻿<Window x:Class="accountgestion"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Gestion du compte" Height="161.855" Width="507.216">
+    <Grid>
+        <Label Content="Username(SuperAdmin) :" HorizontalAlignment="Left" Margin="39,39,0,0" VerticalAlignment="Top" Width="175"/>
+        <Label Content="Password(SuperAdmin) :" HorizontalAlignment="Left" Margin="39,70,0,0" VerticalAlignment="Top" Width="134"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="192,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="192,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172"/>
+    </Grid>
+</Window>

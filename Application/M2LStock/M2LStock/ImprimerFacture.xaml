@@ -1,0 +1,16 @@
+﻿<Window x:Class="ImprimerFacture"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="ImprimerFacture" Height="349" Width="358" Loaded="Window_Loaded">
+    <Grid x:Name="Grid_ImprimerFacture">
+        <Canvas x:Name="Canvas1" HorizontalAlignment="Left" Height="249" Margin="10,10,0,0" VerticalAlignment="Top" Width="330">
+            <Label Content="Facture du : " Width="71" Canvas.Top="10" Canvas.Left="10"/>
+            <Label x:Name="Lbl_DateFacture" Content="" Canvas.Left="104" Canvas.Top="10" Width="80"/>
+            <Label Content="Client :" Canvas.Left="10" Canvas.Top="36"/>
+            <Label x:Name="Lbl_Client" Content="" Canvas.Left="104" Canvas.Top="36" Width="80"/>
+            <Label Content="Montant total :" Canvas.Left="10" Canvas.Top="201"/>
+            <Label x:Name="Lbl_MontantTotal" Content="" Canvas.Left="104" Canvas.Top="201" Width="80"/>
+        </Canvas>
+        <Button x:Name="Bt_ImprimerFacture" Content="Imprimer" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="265,288,0,0"/>
+    </Grid>
+</Window>
