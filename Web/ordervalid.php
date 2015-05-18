@@ -37,7 +37,7 @@ else{
 	</div>';
 }
 
-stock::register($connect, $orderlist, $_SESSION["userid"]);
+order::register($connect, $orderlist, $_SESSION["userid"]);
 unset($_SESSION["orderlist"]);
 
 ?>

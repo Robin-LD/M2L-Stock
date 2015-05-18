@@ -17,16 +17,17 @@ $price = $price*$amountarticle;
 $orderdetail = array('id'=>$idarticle,'amount'=>$amountarticle, 'nom'=>$name, 'price'=>$price);
 
 $exist = true;
-foreach ($_SESSION['orderlist'] as $list => $val) {
-	if($val['id'] == $idarticle){
-		if($articlebdd['amount'] > $val['amount']+$amountarticle){
-			$val['amount'] = $val['amount']+$amountarticle ;
-			$_SESSION['orderlist'][$list] = $val;
+if(isset($_SESSION['orderlist'])){
+	foreach ($_SESSION['orderlist'] as $list => $val) {
+		if($val['id'] == $idarticle){
+			if($articlebdd['amount'] > $val['amount']+$amountarticle){
+				$val['amount'] = $val['amount']+$amountarticle ;
+				$_SESSION['orderlist'][$list] = $val;
+			}
+			$exist = false;
 		}
-		$exist = false;
 	}
 }
-
 if($exist){$_SESSION['orderlist'][] = $orderdetail;}
 ?>
 <div class="panel panel-info" width="40px" >
