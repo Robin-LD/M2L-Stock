@@ -53,8 +53,14 @@ class order
         mysqli_query($connect, $listquery);
     }
 
+    static function details($connect, $id){
+        $query = "SELECT l.price, l.amount, s.nom FROM orderlist l JOIN stock s ON s.id = l.stock_id WHERE l.order_id=".$id;
+        $list = mysqli_query($connect, $query);
+        return $list;
+    }
+
     static function history($connect, $user_id){
-        $query = "SELECT o.id, o.date, SUM(d.price) as price FROM `order` o
+        $query = "SELECT o.id, o.date, o.status, SUM(d.price) as price FROM `order` o
                 JOIN orderlist d ON o.id = d.order_id
                 WHERE o.user_id =".$user_id."
                 GROUP BY o.id;";

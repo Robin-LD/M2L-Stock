@@ -36,6 +36,10 @@ include_once 'ressources/order.class.php';
 	function valid(){
 		$("#myModal").load('ordervalid.php');
 	}
+
+	function detailed(id){
+		$("#infopanel").load('orderinfo.php?id='+id);
+	}
 </script>
 <ul class="nav nav-tabs" role="tablist" id="navbar">
         <li role="presentation" id="menu"><a>Menu</a></li>
@@ -51,21 +55,26 @@ include_once 'ressources/order.class.php';
 	<table class="table" id="thetable">
 		<thead>
 	        <tr>
-	            <th data-field="id">id</th>
+	            <th data-field="id">Numéro<span class="text-info" style="font-size: small;">(i)click</span></th>
 	            <th>Date</th>
 	            <th data-field="price">Prix Total</th>
+	            <th>Statut</th>
 	        </tr>
     	</thead>
     	<?php 
     		$historylist = order::history($connect, $_SESSION['userid']);
     		while($array = mysqli_fetch_array($historylist)){
     			echo"
-    			<tr>
+    			<tr onclick='javascript:detailed(".$array['id'].")'>
     				<td>".$array['id']."</td>
     				<td>".$array['date']."</td>
-    				<td>".$array['price']."€</td>
-    			</tr>
-    			";
+    				<td>".$array['price']."€</td>";
+
+    			if($array['status'] == 1){echo"<td>En cours</td>";}
+    			if($array['status'] == 2){echo"<td>Envoyé</td>";}
+    			if($array['status'] == 3){echo"<td>Annulé</td>";}
+
+    			echo"</tr>";
     		}
 
     	?>
