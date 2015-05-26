@@ -1,5 +1,5 @@
 <?php
-	$connect = mysqli_connect('localhost','root','','m2l-interne');
+	$connect = mysqli_connect('localhost','root','root','m2l-stock2');
 	mysqli_query($connect, "SET NAMES UTF8");
 
 	function getUserbyId($id, $connect){
